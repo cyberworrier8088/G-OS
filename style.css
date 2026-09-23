@@ -73,27 +73,69 @@ body {
     pointer-events: none;
 }
 
-/* welcome message */
-.welcome {
-    position: relative;
 
-    text-align: center;
+/* desktop icons */
+.desktop-icons {
+    position: absolute;
 
-    z-index: 1;
+    top: 20px;
+    left 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
+    z-index: 2;
+
+}
+
+.desktop-icon {
+    width: 80px;
+    min-height: 90px;
+
+    padding: 8px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 6px;
+
+    border: 1px solid transparent;
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: white;
+    font-family: inherit;
+    cursor: pointer;
+
     user-select: none;
 }
 
-.welcome h1 {
-    font-size: 4rem;
-    font-weight: 700;
-    letter-spacing: -2px;
-    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+.desktop-icon:hover {
+    background: rgba(255, 255, 255, 0.12);
+
+    border-color: rgba(255, 255, 255, 0.15);
 }
 
-.welcome p {
-    margin-top: 8px;
+.desktop-icon:active {
+    background: rgba(255, 255, 255, 0.2);
+}
 
-    font-size: 1.1rem;
+/* icon */
 
-    color: var(--desktop-subtext);
+.icon-image {
+
+    font-size: 42px;
+
+    line-height: 1;
+}
+
+.icon-name {
+    font-size: 13px;
+
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
 }
